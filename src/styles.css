@@ -12,6 +12,13 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .aboutMeP {
+    margin-left: 100px;
+    padding-top: 20px;
+  }
+}
+
 .photographOfMe {
   display: block;
   margin: 0 auto;
@@ -19,4 +26,10 @@ body {
   width: 300px;
   height: auto;
   padding: 5px;
+}
+
+.aboutMeP {
+  margin-top: 5px;
+  text-align: center;
+  margin-right: 100px;
 }
