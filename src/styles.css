@@ -2,21 +2,28 @@ body {
   font-family: "Nanum Gothic Coding", monospace;
 }
 
-.homepage {
-  margin: 20px;
-}
-
 @media (min-width: 576px) {
   .homepage {
     margin: 100px;
   }
+  .aboutMeP {
+    font-size: 18px;
+    padding-top: 100px;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .aboutMeP {
-    margin-left: 100px;
+    text-align: center;
     padding-top: 20px;
+    font-size: 14px;
   }
+}
+
+.aboutMeTitle {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .photographOfMe {
@@ -31,5 +38,14 @@ body {
 .aboutMeP {
   margin-top: 5px;
   text-align: center;
-  margin-right: 100px;
+}
+
+.pastProjects {
+  text-align: center;
+  padding: 50px;
+}
+
+.worldClockImg,
+.weatherAppImg {
+  max-width: 250px;
 }
