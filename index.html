@@ -2,25 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Discover the captivating world of front-end development with KatieMayCodes! As a skilled front-end developer, I specialize in creating fun, responsive, and clean designs that bring your web projects to life. Elevate your online presence with visually appealing websites."
+      content="Discover the captivating world of
+    front-end development with KatieMayCodes! As a skilled front-end developer,
+    I specialize in creating fun, responsive, and clean designs that bring your
+    web projects to life. Elevate your online presence with visually appealing
+    websites"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Front End Developer - Katiemay Codes</title>
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary"
-      data-bs-theme="styling"
-    >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Katiemay</a>
         <button
@@ -35,29 +41,84 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Past Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact me</a>
-            </li>
-          </ul>
+          <div class="container">
+            <div class="row">
+              <ul class="navbar-nav">
+                <div class="col d-inline-flex justify-content-center">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#about-me"
+                      >About Me</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Past Projects</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact me</a>
+                  </li>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Instagram</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Github</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Email</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
+    <div class="container d-lg-inline-block homepage">
+      <h2>Hi there. I'm Katiemay.</h2>
+      <h1>I am a teacher turned <strong>front end developer</strong></h1>
+      <h3>and world traveller.</h3>
+    </div>
 
-    <h2>Hi! I'm Katiemay</h2>
-    <h1>I am a teacher turned <strong>front end developer</strong></h1>
-    <h3>and world traveller.</h3>
+    <div class="container aboutMe" id="about-me">
+      <div class="row">
+        <div class="col-sm-6">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/990/original/_DSC_7289.jpg?1691784702"
+            class="img-fluid photographOfMe"
+            alt="Photograph of Katiemay, front end developer"
+          />
+        </div>
+        <div class="col-sm-6">
+          <p class="aboutMeP">
+            Graduating from university with a postgraduate certification in
+            education, I worked as a primary school teacher for a number of
+            years before reaching a pivot point. As rewarding as teaching is, I
+            couldn't envisage spending my life in the profession.<br />
+            My passion from technology began as a teenager. I took apart
+            computers: I wanted to figure out how they worked. Later, my first
+            introduction to coding was creating a snazzy Myspace profile (anyone
+            remember them?) as a young teen. <br />
+            Now, as a front end developer, I create clean, interactive web
+            applications for my clients.<br /><br />
+            Thank you Myspace.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,3 +1,22 @@
-h2 {
-  color: red;
+body {
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.homepage {
+  margin: 20px;
+}
+
+@media (min-width: 576px) {
+  .homepage {
+    margin: 100px;
+  }
+}
+
+.photographOfMe {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 300px;
+  height: auto;
+  padding: 5px;
 }
