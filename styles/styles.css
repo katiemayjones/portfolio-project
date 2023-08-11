@@ -1,0 +1,8 @@
+:root {
+  --primary-color: (red);
+  --seconday-color: (blue);
+}
+
+h2 {
+  color: red;
+}
