@@ -5,6 +5,7 @@ body {
 @media (min-width: 576px) {
   .homepage {
     margin: 100px;
+    padding-right: 130px;
   }
   .aboutMeP {
     font-size: 18px;
@@ -17,6 +18,16 @@ body {
     text-align: center;
     padding-top: 20px;
     font-size: 14px;
+  }
+  .homepage {
+    margin: 100px;
+    padding-right: 130px;
+  }
+}
+
+@media (max-width: 712px) {
+  .skillDesc {
+    display: none;
   }
 }
 
@@ -45,7 +56,45 @@ body {
   padding: 50px;
 }
 
+.pastProjectsTitle {
+  padding: 50px;
+}
+
 .worldClockImg,
 .weatherAppImg {
   max-width: 250px;
+}
+
+.skillsTitle {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.reportCard {
+  text-align: center;
+  background-image: linear-gradient(
+    to right top,
+    #ffffff,
+    #fffeff,
+    #fffefe,
+    #fffdfd,
+    #fffcfc
+  );
+  max-width: fit-content;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border: 1px black solid;
+  margin-bottom: 20px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.skillDesc {
+  font-size: 10px;
+}
+
+i {
+  padding-top: 15px;
 }
