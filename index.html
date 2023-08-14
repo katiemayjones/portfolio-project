@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-sm-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Katiemay</a>
         <button
@@ -45,71 +45,40 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="container">
-            <div class="row">
-              <ul class="navbar-nav">
-                <div class="col d-inline-flex justify-content-center">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      aria-current="page"
-                      href="index.html"
-                      >Home |
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      aria-current="page"
-                      href="#about-me"
-                      >About Me |
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Past Projects |
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Skills | </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact me</a>
-                  </li>
-                </div>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="https://www.linkedin.com/in/katiemayjones1990/"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/katiemayjones"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="mailto:katiemayjones1990@gmail.com"
-                    ><i class="fa-regular fa-envelope"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home |
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about-me"
+                >About Me |
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#past-projects"
+                >Past Projects |
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills-id">Skills | </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lets-connect">Contact me</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+
     <div class="container d-lg-inline-block homepage">
       <h2>Hi there. I'm Katiemay.</h2>
       <h1>I am a teacher turned <strong>front end developer</strong></h1>
-      <h3>and world traveller.</h3>
+      <h3 class="changingDesc" id="changing-desc">and world traveller.</h3>
     </div>
 
     <div class="container aboutMe" id="about-me">
@@ -143,29 +112,43 @@
     <div class="container-fluid pastProjects" id="past-projects">
       <h2 class="pastProjectsTitle">Past projects</h2>
       <div class="row">
-        <!-- need to fix columns because images are overlapping on small screens -->
         <div class="col d-flex d-sm-inline">
           <h3 class="pastProjectDesc">Weather application</h3>
-          <img src="images/WeatherApp.png" class="weatherAppImg" />
+          <img
+            src="images/WeatherApp.png"
+            class="weatherAppImg"
+            id="project-img"
+          />
         </div>
         <div class="col d-flex d-sm-inline">
           <h3 class="pastProjectDesc">Coding Challenge</h3>
           <img
             src="images/flavourful-food-screenshot.png"
             class="flavourfulImg"
+            id="project-img"
           />
         </div>
         <div class="col d-flex d-sm-inline">
           <h3 class="pastProjectDesc">World Clock</h3>
-          <img src="images/WorldClock.png" class="worldClockImg" />
+          <img
+            src="images/WorldClock.png"
+            class="worldClockImg"
+            id="project-img"
+          />
         </div>
       </div>
     </div>
 
     <h2 class="skillsTitle">Skills</h2>
     <div class="container-fluid reportCard" id="skills-id">
-      <h3 class="skillsTitle text-decoration-underline">Report Card</h3>
+      <img
+        src="/images/a-plus-graphic.png"
+        class="d-flex aplusImg"
+        id="a-graphic"
+      />
+      <!-- fix overlapping A grade picture -->
 
+      <h3 class="skillsTitle text-decoration-underline">Report Card</h3>
       <div class="container-fluid" id="skills-id">
         <div class="d-inline-flex">
           <div class="row">
@@ -228,5 +211,42 @@
         </div>
       </div>
     </div>
+
+    <div class="container letsConnect" id="lets-connect">
+      <h2 class="text-center">Let's Connect</h2>
+      <ul class="d-flex">
+        <li class="socialLink">
+          <a
+            class="linkedInLink"
+            href="https://www.linkedin.com/in/katiemayjones1990/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="socialLink">
+          <a
+            class="githubLink"
+            href="https://github.com/katiemayjones"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li class="socialLink">
+          <a class="instaLink" href="#"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li class="socialLink">
+          <a class="mailLink" href="mailto:katiemayjones1990@gmail.com"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      Open source code by
+      <a href="https://github.com/katiemayjones">Katiemay</a>
+    </footer>
   </body>
+  <script src="/src/script.js"></script>
 </html>
