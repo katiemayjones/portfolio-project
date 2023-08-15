@@ -30,21 +30,21 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Katiemay</a>
+        <a class="navbar-brand" href="index.html">Katiemay</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbar-content"
+          aria-controls="navbar-content"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbar-content">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html"
@@ -68,17 +68,18 @@
               <a class="nav-link" href="#skills-id">Skills | </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#lets-connect">Contact me</a>
+              <a class="nav-link" href="#lets-connect">Contact me |</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <div class="container d-lg-inline-block homepage">
-      <h2>Hi there. I'm Katiemay.</h2>
-      <h1>I am a teacher turned <strong>front end developer</strong></h1>
-      <h3 class="changingDesc" id="changing-desc">and world traveller.</h3>
+    <div class="containerIntroduction">
+      <div class="container d-lg-inline-block homepage">
+        <h2>Hi there. I'm Katiemay.</h2>
+        <h1>I am a teacher turned <strong>front end developer</strong></h1>
+        <h3 class="changingDesc" id="changing-desc">and world traveller.</h3>
+      </div>
     </div>
 
     <div class="container aboutMe" id="about-me">
@@ -146,7 +147,6 @@
         class="d-flex aplusImg"
         id="a-graphic"
       />
-      <!-- fix overlapping A grade picture -->
 
       <h3 class="skillsTitle text-decoration-underline">Report Card</h3>
       <div class="container-fluid" id="skills-id">
@@ -232,11 +232,6 @@
           ></a>
         </li>
         <li class="socialLink">
-          <a class="instaLink" href="#"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </li>
-        <li class="socialLink">
           <a class="mailLink" href="mailto:katiemayjones1990@gmail.com"
             ><i class="fa-regular fa-envelope"></i
           ></a>
@@ -249,4 +244,9 @@
     </footer>
   </body>
   <script src="/src/script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
 </html>
