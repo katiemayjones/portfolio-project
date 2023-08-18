@@ -98,6 +98,9 @@ ul {
   margin: 0 auto;
 }
 
+.pipelineHeader {
+  padding-bottom: 50px;
+}
 .inThePipeline {
   text-align: center;
   background-color: #f8f8f8;
