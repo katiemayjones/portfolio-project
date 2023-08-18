@@ -104,10 +104,10 @@ ul {
 
 .worldClockImg,
 .weatherAppImg,
-.flavourfulImg {
+.flavourfulImg, .LondonImg {
   max-width: 250px;
   height: auto;
-  padding: 20px;
+  padding: 10px;
   display: block;
   margin: 0 auto;
 }
@@ -118,8 +118,6 @@ ul {
 
 .inThePipeline {
   text-align: center;
-  background-color: #f0eeee5d;
-
   padding: 20px;
 }
 
@@ -127,6 +125,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
+  grid-gap: 30px;
 }
 
 .skillsTitle {
