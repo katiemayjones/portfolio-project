@@ -187,10 +187,10 @@ footer {
 }
 
 .loader {
-  position: fixed;
-  top: 50%;
-  left: 43%;
+  position: relative;
+  display: block;
   margin: 0 auto;
+  margin-top:200px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
