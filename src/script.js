@@ -1,4 +1,17 @@
+function vanish() {
+  setInterval(loaderRemove, 3000);
+  function loaderRemove() {
+    loader.remove("#loader");
+    document.getElementById("#main-body").style.display = "block";
+  }
+}
+
+let loader = document.querySelector("#loader");
+window.addEventListener("load", vanish);
+
 function changeDescription() {
+  document.getElementById("#main-body").style.display = "none";
+
   let descriptionsArray = [
     "and world traveller.",
     "and chocoholic.",
