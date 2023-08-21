@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0HT6N0BM9Y"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0HT6N0BM9Y");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Katiemay Codes - coding and front end development solutions</title>
@@ -32,20 +45,7 @@
     />
     <link rel="stylesheet" href="src/styles.css" />
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-0HT6N0BM9Y"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
 
-    gtag("config", "G-0HT6N0BM9Y");
-  </script>
   <body>
     <div class="mainBody" id="#main-body">
       <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
@@ -156,6 +156,7 @@
                 src="images/WeatherApp.png"
                 class="weatherAppImg"
                 id="project-img"
+                alt="photo of weather application using Bootstrap and RESTful APIs"
             /></a>
           </div>
           <div class="box">
@@ -164,10 +165,11 @@
               href="https://aquamarine-concha-340db0.netlify.app/"
               target="_blank"
               rel="noreferrer"
+              alt="photo of coding challenge for SheCodes"
               ><img
                 src="images/flavourful-food-screenshot.png"
                 class="flavourfulImg"
-                id="project-img"
+                id="flavourful-img"
             /></a>
           </div>
           <div class="box">
@@ -176,6 +178,7 @@
               href="https://phenomenal-kashata-10ede3.netlify.app/"
               target="_blank"
               rel="noreferrer"
+              alt="photo of world clock application"
             >
               <img
                 src="images/WorldClock.png"
@@ -189,6 +192,7 @@
               href="https://flourishing-gecko-08a2e0.netlify.app"
               target="_blank"
               rel="noreferrer"
+              alt="photo of information page about London"
             >
               <img
                 src="images/london-concept.png"
@@ -301,9 +305,18 @@
               </div>
             </div>
           </div>
+          <div class="container-fluid reportCard2" id="skills-id">
+            <div class="d-inline-flex">
+              <div class="row">
+                <div class="col p-sm-3">
+                  <i class="fa-brands fa-react"></i>
+                  <p class="skillDesc">React</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
       <footer>
         <div class="container letsConnect" id="lets-connect">
           <h2 class="text-center">
