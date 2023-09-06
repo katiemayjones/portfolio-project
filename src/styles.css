@@ -94,6 +94,7 @@ h5 {
 .barbieImg,
 .weatherAppImg {
   display: block;
+  margin: 0 auto;
   max-width: 700px;
   translate: 0px 100px;
   border-radius: 9px;
