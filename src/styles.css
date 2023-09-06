@@ -328,12 +328,6 @@ footer {
   .aboutMeP {
     font-size: 18px;
   }
-
-  .barbieImg,
-  .weatherAppImg,
-  .worldClockImg {
-    max-width: 400px;
-  }
 }
 
 @media (max-width: 768px) {
