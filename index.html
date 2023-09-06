@@ -14,6 +14,9 @@
 
       gtag("config", "G-0HT6N0BM9Y");
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Katiemay Codes - coding and front end development solutions</title>
@@ -53,10 +56,13 @@
 
   <body>
     <div class="mainBody" id="#main-body">
-      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <nav
+        class="navbar navbarfixed-top navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <object data="/images/katiemaycodesname.svg"></object
+            <object data="/images/logo-png.png" class="logo"></object
           ></a>
           <button
             class="navbar-toggler"
@@ -118,101 +124,101 @@
         </div>
       </div>
 
-      <div class="container aboutMe" id="about-me">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2 class="aboutMeTitle">About me</h2>
-            <img
-              src="images/katiemayPicture.jpg"
-              class="img-fluid photographOfMe"
-              alt="Photograph of Katiemay, front end developer"
-            />
-          </div>
-          <div class="col-sm-6">
-            <p class="aboutMeP">
-              Graduating from university with a postgraduate certification in
-              education, I worked as a primary school teacher for a number of
-              years before reaching a pivot point. As rewarding as teaching is,
-              I couldn't envisage spending my life in the profession.<br />
-              My passion from technology began as a teenager. I took apart
-              computers: I wanted to figure out how they worked. Later, my first
-              introduction to coding was creating a snazzy Myspace profile
-              (anyone remember them?) as a young teen. <br />
-              Now, as a front end developer, I create clean, interactive web
-              applications for my clients from my home in London.<br /><br />
-              Thank you Myspace.
-            </p>
-          </div>
+      <div class="aboutMe">
+        <div class="box">
+          <h2 class="aboutMeTitle">About me</h2>
+          <img
+            src="images/katiemayPicture.jpg"
+            class="img-fluid photographOfMe"
+            alt="Photograph of Katiemay, front end developer"
+          />
+        </div>
+        <div class="box">
+          <p class="aboutMeP">
+            Graduating from university with a postgraduate certification in
+            education, I worked as a primary school teacher for a number of
+            years before reaching a pivot point. As rewarding as teaching is, I
+            couldn't envisage spending my life in the profession.<br />
+            My passion from technology began as a teenager. I took apart
+            computers: I wanted to figure out how they worked. Later, my first
+            introduction to coding was creating a snazzy Myspace profile (anyone
+            remember them?) as a young teen. <br />
+            Now, as a front end developer, I create clean, interactive web
+            applications for my clients from my home in London.<br /><br />
+            Thank you Myspace.
+          </p>
         </div>
       </div>
-      <!-- add links to the different projects -->
-      <div class="container-fluid pastProjects" id="past-projects">
+      <div class="tag pastProjects">
         <h2 class="pastProjectsTitle">
           <span class="strong">Past projects</span>
         </h2>
-        <div class="gridTwo">
+
+        <div class="tag barbieProject">
           <div class="box">
-            <h3 class="pastProjectDesc">Weather application</h3>
-            <a
-              href="https://verdant-muffin-eba333.netlify.app"
-              target="_blank"
-              rel="noreferrer"
-              ><img
-                src="images/WeatherApp.png"
-                class="weatherAppImg"
-                id="project-img"
-                alt="photo of weather application using Bootstrap and RESTful APIs"
-            /></a>
+            <h5>Barbie concept piece</h5>
+            <p>
+              Vibrant and engaging web development using jQuery and vanilla JS.
+            </p>
+            <button>
+              <a href="https://astonishing-dasik-ff47d3.netlify.app/"
+                >VIEW PROJECT</a
+              >
+            </button>
           </div>
           <div class="box">
-            <h3 class="pastProjectDesc">Coding Challenge</h3>
-            <a
-              href="https://aquamarine-concha-340db0.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-              alt="photo of coding challenge for SheCodes"
-              ><img
-                src="images/flavourful-food-screenshot.png"
-                class="flavourfulImg"
-                id="flavourful-img"
-            /></a>
+            <img
+              src="images/past-projects/barbie-concept.png"
+              class="barbieImg fadeIn"
+              id="project-img"
+            />
+          </div>
+        </div>
+
+        <div class="weatherApp">
+          <div class="box">
+            <img
+              src="images/WeatherApp.png"
+              class="weatherAppImg slideInLeft"
+              id="project-img"
+              alt="photo of weather application using Bootstrap and RESTful APIs"
+            />
           </div>
           <div class="box">
-            <h3 class="pastProjectDesc">World Clock</h3>
-            <a
-              href="https://phenomenal-kashata-10ede3.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-              alt="photo of world clock application"
-            >
-              <img
-                src="images/WorldClock.png"
-                class="worldClockImg"
-                id="project-img"
-            /></a>
+            <h5>Weather application</h5>
+            <p>Weather application using Javascript and REST APIs.</p>
+            <button>
+              <a href="https://verdant-muffin-eba333.netlify.app"
+                >VIEW PROJECT</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="worldClock">
+          <div class="box">
+            <h5>World Clock</h5>
+            <p>Using REST APIs and JS to deliver a fun world clock design.</p>
+            <button>
+              <a href="https://phenomenal-kashata-10ede3.netlify.app/">
+                VIEW PROJECT</a
+              >
+            </button>
           </div>
           <div class="box">
-            <h3 class="pastProjectDesc">Welcome to London</h3>
-            <a
-              href="https://flourishing-gecko-08a2e0.netlify.app"
-              target="_blank"
-              rel="noreferrer"
-              alt="photo of information page about London"
-            >
-              <img
-                src="images/london-concept.png"
-                class="LondonImg"
-                id="project-img"
-            /></a>
+            <img
+              src="images/WorldClock.png"
+              class="worldClockImg slideIn"
+              id="project-img"
+            />
           </div>
         </div>
       </div>
-
-      <div class="container-fluid inThePipeline" id="in-the-pipeline">
+      <div class="tag container-fluid inThePipeline" id="in-the-pipeline">
         <h2 class="pipelineHeader">
           <span class="strong">In The Pipeline</span>
         </h2>
-        <div class="gridOne">
+        <div class="upcoming">
           <div>
             <h4>
               <a
@@ -239,7 +245,7 @@
           </div>
         </div>
       </div>
-      <div class="wrapper">
+      <div class="tag wrapper">
         <h2 class="skillsTitle"><span class="strong">Skills</span></h2>
         <div class="container-fluid reportCard" id="skills-id">
           <img
@@ -323,7 +329,7 @@
         </div>
       </div>
       <footer>
-        <div class="container letsConnect" id="lets-connect">
+        <div class="tag container letsConnect" id="lets-connect">
           <h2 class="text-center">
             <span class="strong">Let's Connect </span>
           </h2>
